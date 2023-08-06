@@ -9,7 +9,7 @@ def input_error(handler: tuple) -> str:
     errors = {
         1: 'Enter valid command!',
         2: 'Username not found',
-        3: 'Enter valid username and phone (phone must contain only digits)',
+        3: 'Enter valid username and(or) phone (phone must contain only digits)',
         4: 'Enter username',
     }
     def trying(user_input: tuple[str]) -> str:
@@ -112,6 +112,5 @@ def main() -> None:
 
 
 if __name__ == '__main__':
-    
     database = {}
     main()
