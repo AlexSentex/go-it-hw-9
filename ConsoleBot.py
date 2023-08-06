@@ -19,6 +19,8 @@ def input_error(handler: tuple) -> str:
             return errors[2]
         except ValueError:
             return errors[3]
+        except IndexError:
+            return errors[3]
         except CommandError:
             return errors[1]
         except KeyError:
