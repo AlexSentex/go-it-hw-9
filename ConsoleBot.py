@@ -4,6 +4,7 @@ class UsernameError(LookupError):
     '''Username not found!'''
 class CommandError(LookupError):
     '''Undefined command'''
+    
 def input_error(handler: tuple) -> str:
     '''Return input error'''
     errors = {
